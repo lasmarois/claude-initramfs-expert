@@ -1,22 +1,23 @@
 ---
 name: initramfs-expert
-description: "Comprehensive expertise for building custom Linux initramfs from first principles. Use when designing early boot architecture, writing busybox init scripts, implementing switch_root, handling device discovery, or configuring systemd handoff. Covers LUKS encryption, LVM activation, network boot, and debugging strategies. Activate for any initramfs, early userspace, or boot troubleshooting tasks."
+description: "Reference documentation for the initramfs-architect agent. Contains kernel boot contracts, design patterns, systemd handoff requirements, and advanced feature guides. NOT for direct use - always use the initramfs-architect agent instead."
 ---
 
 # initramfs Expert Skill
 
-This skill provides comprehensive knowledge for designing and building custom Linux initramfs implementations from first principles, targeting systemd-based distributions like Rocky Linux and RHEL.
+> **Note:** This skill is a reference library for the `initramfs-architect` agent. Do not invoke directly - use the agent for initramfs tasks.
 
-## When to Use This Skill
+This skill provides comprehensive reference documentation for building custom Linux initramfs implementations from first principles, targeting systemd-based distributions like Rocky Linux and RHEL.
 
-Activate this skill when:
-- Designing custom initramfs architecture
-- Writing busybox-based /init scripts
-- Implementing switch_root handoff to systemd
-- Troubleshooting early boot failures
-- Integrating LUKS encryption or LVM in early boot
-- Building cpio archives for kernel consumption
-- Debugging device discovery issues
+## Contents
+
+This skill contains reference material for:
+- Kernel initramfs contract and cpio format
+- busybox-based /init script patterns
+- switch_root and systemd handoff requirements
+- LUKS encryption and LVM integration
+- Device discovery strategies
+- Debugging techniques
 
 ## Quick Reference
 

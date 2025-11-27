@@ -1,0 +1,32 @@
+{
+  "name": "claude-initramfs-expert",
+  "description": "Plugin marketplace for Linux early boot and custom initramfs development expertise",
+  "owner": {
+    "name": "Nicolas Marois",
+    "email": "mail@nicomarois.com"
+  },
+  "plugins": [
+    {
+      "name": "initramfs-expert",
+      "source": "./plugins/initramfs-expert",
+      "description": "Expert knowledge for designing and building custom Linux initramfs from first principles. Includes specialized agent and comprehensive skill for busybox-based init scripts with systemd handoff.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Nicolas Marois"
+      },
+      "keywords": [
+        "initramfs",
+        "linux",
+        "boot",
+        "kernel",
+        "busybox",
+        "systemd",
+        "switch_root",
+        "early-userspace",
+        "rocky-linux",
+        "rhel"
+      ],
+      "category": "infrastructure"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "initramfs-expert",
+  "version": "1.0.0",
+  "description": "Expert knowledge for designing and building custom Linux initramfs from first principles. Provides a specialized subagent and comprehensive skill for busybox-based init scripts with systemd handoff on RHEL/Rocky Linux systems.",
+  "author": {
+    "name": "Nicolas Marois",
+    "email": "mail@nicomarois.com"
+  },
+  "homepage": "https://github.com/lasmarois/claude-initramfs-expert",
+  "repository": "https://github.com/lasmarois/claude-initramfs-expert",
+  "license": "MIT",
+  "keywords": [
+    "initramfs",
+    "linux",
+    "boot",
+    "kernel",
+    "busybox",
+    "systemd",
+    "switch_root",
+    "early-userspace",
+    "rocky-linux",
+    "rhel",
+    "devops",
+    "infrastructure"
+  ]
+}

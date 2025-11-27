@@ -23,7 +23,7 @@ Expert knowledge for designing and building custom Linux initramfs from first pr
 
 **Includes:**
 - `initramfs-architect` agent - Specialized subagent for boot architecture
-- `initramfs-expert` skill - Comprehensive reference documentation
+- `initramfs-reference` skill - Comprehensive reference documentation
 - `/initramfs-new` command - Scaffold new initramfs projects
 
 **Use Cases:**
@@ -47,7 +47,7 @@ claude-initramfs-expert/
 │       ├── agents/
 │       │   └── initramfs-architect.md
 │       ├── skills/
-│       │   └── initramfs-expert/
+│       │   └── initramfs-reference/
 │       │       ├── SKILL.md
 │       │       ├── references/
 │       │       ├── scripts/

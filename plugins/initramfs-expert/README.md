@@ -27,7 +27,7 @@ The agent is automatically invoked when discussing:
 - Boot process design
 - Kernel parameter configuration
 
-### Skill: initramfs-expert
+### Skill: initramfs-reference
 
 Comprehensive reference documentation organized for progressive disclosure:
 
@@ -95,7 +95,7 @@ Use the initramfs-architect agent to review my init script
 /initramfs-new my-custom-initramfs
 
 # Access skill documentation
-Read the kernel-documentation.md from initramfs-expert skill
+Read the kernel-documentation.md from initramfs-reference skill
 ```
 
 ## Target Environment

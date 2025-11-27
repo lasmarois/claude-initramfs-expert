@@ -1,9 +1,9 @@
 ---
-name: initramfs-expert
+name: initramfs-reference
 description: "Reference documentation for the initramfs-architect agent. Contains kernel boot contracts, design patterns, systemd handoff requirements, and advanced feature guides. NOT for direct use - always use the initramfs-architect agent instead."
 ---
 
-# initramfs Expert Skill
+# initramfs Reference
 
 > **Note:** This skill is a reference library for the `initramfs-architect` agent. Do not invoke directly - use the agent for initramfs tasks.
 

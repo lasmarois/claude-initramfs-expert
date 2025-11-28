@@ -56,14 +56,21 @@ mount -t tmpfs -o mode=0755,nodev,nosuid,strictatime tmpfs /run  # Critical for 
 
 For detailed information, consult these reference files in this skill:
 
+### Core Documentation
 - **`references/kernel-documentation.md`** - Kernel initramfs contract, cpio format, boot parameters
 - **`references/design-patterns.md`** - Production init script patterns, modular architecture, error handling
 - **`references/systemd-handoff.md`** - systemd interface requirements, /run preservation, clean transitions
 - **`references/advanced-features.md`** - LUKS integration, LVM activation, network boot, microcode loading
 
+### Ubuntu-Specific Documentation
+- **`references/ubuntu-fundamentals.md`** - Ubuntu initramfs-tools architecture, differences from RHEL, busybox-static, GRUB2, Secure Boot
+- **`references/squashfs-overlay.md`** - Squashfs root with overlayfs, Casper reference, persistent storage, toram patterns
+- **`references/networkmanager-initramfs.md`** - NetworkManager initrd mode, bypassing netplan, keyfile profiles, network-dependent root
+
 ## Example Scripts
 
 - **`examples/minimal-init.sh`** - Bare minimum working /init for reference
+- **`examples/ubuntu-squashfs-nm-init.sh`** - Complete Ubuntu squashfs+NetworkManager boot
 - **`scripts/validate-initramfs.sh`** - Validate cpio archive structure
 
 ## Essential Commands

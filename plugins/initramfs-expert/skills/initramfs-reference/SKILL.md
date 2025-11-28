@@ -7,7 +7,7 @@ description: "Reference documentation for the initramfs-architect agent. Contain
 
 > **Note:** This skill is a reference library for the `initramfs-architect` agent. Do not invoke directly - use the agent for initramfs tasks.
 
-This skill provides comprehensive reference documentation for building custom Linux initramfs implementations from first principles, targeting systemd-based distributions like Rocky Linux and RHEL.
+This skill provides comprehensive reference documentation for building custom Linux initramfs implementations from first principles, targeting systemd-based distributions including RHEL/Rocky Linux and Ubuntu LTS.
 
 ## Contents
 
@@ -18,6 +18,9 @@ This skill contains reference material for:
 - LUKS encryption and LVM integration
 - Device discovery strategies
 - Debugging techniques
+- Ubuntu initramfs-tools architecture and differences from dracut
+- Squashfs root with overlayfs for live/diskless systems
+- NetworkManager in initrd mode for network-dependent boot
 
 ## Quick Reference
 

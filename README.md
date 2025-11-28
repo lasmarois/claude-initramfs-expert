@@ -19,18 +19,33 @@ A Claude Code plugin marketplace providing specialized tools for Linux early boo
 
 ### initramfs-expert
 
-Expert knowledge for designing and building custom Linux initramfs from first principles.
+Expert knowledge for designing and building custom Linux initramfs from first principles, supporting both RHEL/Rocky and Ubuntu LTS distributions.
 
 **Includes:**
 - `initramfs-architect` agent - Specialized subagent for boot architecture
 - `initramfs-reference` skill - Comprehensive reference documentation
 - `/initramfs-new` command - Scaffold new initramfs projects
 
+**Core Knowledge:**
+- Kernel boot contracts and cpio archive format
+- switch_root mechanics and systemd handoff
+- LUKS/LVM integration in early boot
+- Device discovery strategies
+
+**Ubuntu-Specific Knowledge:**
+- initramfs-tools vs dracut architecture differences
+- Squashfs root with overlayfs (live systems, diskless workstations)
+- NetworkManager in initrd mode (no D-Bus required)
+- Network-dependent root: NFS, iSCSI, HTTP-fetched images
+- Casper/toram patterns for copy-to-RAM boot
+- Bypassing netplan with keyfile profiles
+
 **Use Cases:**
 - Custom initramfs without dracut/mkinitcpio
-- systemd handoff from shell-based init
-- LUKS/LVM integration in early boot
-- Boot troubleshooting on RHEL/Rocky Linux
+- Diskless workstations booting from network
+- Live USB/CD systems with persistent overlay
+- Kiosk and appliance deployments
+- Boot troubleshooting on RHEL/Rocky and Ubuntu
 
 [Read more →](./plugins/initramfs-expert/README.md)
 
@@ -50,8 +65,18 @@ claude-initramfs-expert/
 │       │   └── initramfs-reference/
 │       │       ├── SKILL.md
 │       │       ├── references/
-│       │       ├── scripts/
-│       │       └── examples/
+│       │       │   ├── kernel-documentation.md
+│       │       │   ├── design-patterns.md
+│       │       │   ├── systemd-handoff.md
+│       │       │   ├── advanced-features.md
+│       │       │   ├── ubuntu-fundamentals.md
+│       │       │   ├── squashfs-overlay.md
+│       │       │   └── networkmanager-initramfs.md
+│       │       ├── examples/
+│       │       │   ├── minimal-init.sh
+│       │       │   └── ubuntu-squashfs-nm-init.sh
+│       │       └── scripts/
+│       │           └── validate-initramfs.sh
 │       ├── commands/
 │       │   └── initramfs-new.md
 │       └── README.md
